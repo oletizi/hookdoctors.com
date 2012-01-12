@@ -1,0 +1,17 @@
+/*
+Theme Name:     Twenty Eleven Child
+Theme URI:      http: //example.com/
+Description:    Child theme for the Twenty Eleven theme 
+Author:         Orion Letizi
+Author URI:     http: //artpopmusic.com/about/
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
+
+.singular .entry-header,
+.singular .entry-content {
+	width: 100%
+}
+
