@@ -2,8 +2,8 @@
 
 ARG=$1
 localroot="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source=${localroot}/www
-dest='artpopmu@hookdoctors.com:~/www/hookdoctors/'
+source=${localroot}/www/
+dest='artpopmu@hookdoctors.com:~/www/hookdoctors'
 
 if [ $# != 1 ]; then
 echo "Useage: sync.sh test or prod\n"
