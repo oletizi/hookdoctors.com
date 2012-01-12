@@ -11,11 +11,11 @@ exit
 fi
 
 if [ $ARG = test ]; then
-    cmd="rsync  -xva --dry-run  --exclude=".git" -e 'ssh' $dest  $source"
+    cmd="rsync  -xva --dry-run  --exclude="*~" --exclude=".git" -e 'ssh' $dest  $source"
     echo "Executing $cmd..."
     $cmd
 elif [ $ARG = prod ]; then
-    cmd="rsync  -xva --no-perms --exclude=".git" -e 'ssh' $dest $source"
+    cmd="rsync  -xva --no-perms --exclude="*~" --exclude=".git" -e 'ssh' $dest $source"
     echo "Executing $cmd..."
     $cmd
 else

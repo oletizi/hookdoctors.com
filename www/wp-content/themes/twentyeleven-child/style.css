@@ -15,3 +15,10 @@ Version:        0.1.0
 	width: 100%
 }
 
+.singular.page .hentry {
+	padding: 0;
+}
+
+.entry-content h1 {
+	font-size: 36px
+}
